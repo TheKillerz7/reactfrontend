@@ -1,6 +1,8 @@
 import Check from '../../assets/svgs/Check'
 
 const Status = ({ order }) => {
+
+    //A logic for order status
     const status = {
         new: 1,
         pending: 2,
@@ -48,7 +50,7 @@ const Status = ({ order }) => {
                         <span className="lg:w-1/2 lg:-translate-y-1/2 lg:top-1/2 lg:-translate-x-full lg:border-none lg:bg-gray-100 lg:h-0.5 a w-0.5 h-1/2 absolute border border-dashed border-gray-100 transform -translate-x-1/2 -translate-y-1/2 top-0 left-1/2"></span>
                         <div className="icon lg:mr-0 lg:w-10 lg:h-10 lg:flex lg:items-center lg:justify-center relative w-16 h-16 bg-gray-100 rounded-full z-10">
                             <div className="lg:block hidden w-5 h-5 rounded-full bg-gray-300"></div>
-                            {/* <img src={check} className="w-3 h-3 absolute" /> */}
+                            {/* <Check ClassName="lg:block absolute w-3 h-3 hidden" color="white" /> */}
                         </div>
                     </div>
                     <div className="description">
@@ -61,7 +63,7 @@ const Status = ({ order }) => {
                         <span className="lg:w-1/2 lg:-translate-y-1/2 lg:top-1/2 lg:-translate-x-full lg:border-none lg:bg-gray-100 lg:h-0.5 a w-0.5 h-1/2 absolute border border-dashed border-gray-100 transform -translate-x-1/2 -translate-y-1/2 top-0 left-1/2"></span>
                         <div className="icon lg:mr-0 lg:w-10 lg:h-10 lg:flex lg:items-center lg:justify-center relative w-16 h-16 bg-gray-100 rounded-full z-10">
                             <div className="lg:block hidden w-5 h-5 rounded-full bg-gray-300"></div>
-                            {/* <img src={check} className="w-3 h-3 absolute" /> */}
+                            {/* <Check ClassName="lg:block absolute w-3 h-3 hidden" color="white" /> */}
                         </div>
                     </div>
                     <div className="description">

@@ -9,16 +9,20 @@ import Products from './components/main/Products'
 import Bills from './components/main/Bills'
 
 function App() {
+
+  //client's information in navigation bar
   const navInfo = {
     picture: "P",
     name: "patsanan"
   }
 
+  //order status and order code
   const order = {
     code: "21526498",
     status: "new"
   }
 
+  //billing object
   const bill = {
     status: 'paid',
     pricing: [
@@ -37,6 +41,7 @@ function App() {
     ]
   }
 
+  //ordered products object
   const products = [
     {
       name: "",
@@ -58,11 +63,14 @@ function App() {
     },
   ]
   
+  //shipping object
   const shipping = {
     name: "พันณิต่า สุดสะวัน",
     address: "11/11 หมู่ 6 ตำบลบ้านเมือง อำเภอเมือง"
   }
 
+
+  //profile object
   const profile = {
     name: "Parsanan Buranapattama",
     member: "silver",

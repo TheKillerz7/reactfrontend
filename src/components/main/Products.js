@@ -10,6 +10,7 @@ const Products = ({ products }) => {
                     <div className="table-cell lg:w-2/12 pr-5 w-3/12">ราคาทั้งหมด</div>
                 </div>
                 {
+                    //product mapping
                     products.map((product, index) => {
                         return(
                             <div className={"table-row " + (index+1 !== products.length && "shadow")}>
