@@ -1,3 +1,5 @@
+import Check from '../../assets/svgs/Check'
+
 const Status = ({ order }) => {
     const status = {
         new: 1,
@@ -13,29 +15,55 @@ const Status = ({ order }) => {
                 <div className="lg:hidden font-medium">สถานะการสั่งซื้อ</div>
             </div>
             <div className="status xl:px-24 lg:text-center lg:px-8 lg:grid lg:grid-cols-4 lg:items-start lg:justify-around">
-                <div className="new lg:flex lg:mb-3 lg:flex-col grid items-center justify-start mb-10" style={{ gridTemplateColumns: "min-content auto" }}>
-                    <div className="icon lg:mr-0 lg:mb-2 lg:w-8 lg:h-8 w-16 h-16 bg-green-900 bg-opacity-80 rounded-full mr-7"></div>
+                <div className="new lg:flex lg:mb-3 lg:flex-col grid items-center justify-start gap-6 mb-10" style={{ gridTemplateColumns: "min-content auto" }}>
+                    <div className="lg:mb-2 w-full relative flex items-center justify-center">
+                        <span className="lg:w-1/2 lg:-translate-y-1/2 lg:top-1/2 lg:-translate-x-0 lg:border-none lg:bg-pGreen lg:h-0.5 w-0.5 h-1/2 absolute border border-dashed border-pGreen transform -translate-x-1/2 -translate-y-0 top-full left-1/2" ></span>
+                        <div className="icon lg:mr-0 lg:w-10 lg:h-10 lg:flex lg:items-center lg:justify-center relative w-16 h-16 bg-lightGreen rounded-full z-10">
+                            <div className="lg:block hidden w-5 h-5 rounded-full bg-pGreen"></div>
+                            <Check ClassName="lg:block absolute w-3 h-3 hidden" color="white" />
+                        </div>
+                    </div>
                     <div className="description">
                         <div className="title lg:text-xs text-xl text-green-700 font-semibold">คำสั่งซื้อใหม่</div>
                         <div className="date lg:text-smaller text-gray-400 font-medium text-sm">30/12/2563 - 10.00</div>
                     </div>
                 </div>
-                <div className="pending lg:flex lg:mb-3 lg:flex-col grid items-center justify-start mb-10" style={{ gridTemplateColumns: "min-content auto" }}>
-                    <div className="icon lg:mr-0 lg:mb-2 lg:w-8 lg:h-8 w-16 h-16 bg-gray-200 rounded-full mr-7"></div>
+                <div className="pending lg:flex lg:mb-3 lg:flex-col grid items-center justify-start gap-6 mb-10" style={{ gridTemplateColumns: "min-content auto" }}>
+                    <div className="lg:mb-2 w-full relative flex items-center justify-center">
+                        <span className="lg:w-1/2 lg:-translate-y-1/2 lg:top-1/2 lg:-translate-x-0 lg:border-none lg:bg-gray-100 lg:h-0.5 a w-0.5 h-1/2 absolute border border-dashed border-gray-100 transform -translate-x-1/2 -translate-y-0 top-full left-1/2" ></span>
+                        <span className="lg:w-1/2 lg:-translate-y-1/2 lg:top-1/2 lg:-translate-x-full lg:border-none lg:bg-pGreen lg:h-0.5 w-0.5 h-1/2 absolute border border-dashed border-pGreen transform -translate-x-1/2 -translate-y-1/2 top-0 left-1/2"></span>
+                        <div className="icon lg:mr-0 lg:w-10 lg:h-10 lg:flex lg:items-center lg:justify-center relative w-16 h-16 bg-lightGreen rounded-full z-10">
+                            <div className="lg:block hidden w-5 h-5 rounded-full bg-pGreen"></div>
+                            <Check ClassName="lg:block absolute w-3 h-3 hidden" color="white" />
+                        </div>
+                    </div>
                     <div className="description">
-                        <div className="title lg:text-xs text-xl text-gray-400 font-semibold">ร้านค้ากำลังเตรียมอาหาร</div>
-                        <div className="date lg:text-smaller text-gray-400 font-medium text-sm"></div>
+                        <div className="title lg:text-xs text-xl text-green-700 font-semibold">ร้านค้ากำลังเตรียมอาหาร</div>
+                        <div className="date lg:text-smaller text-gray-400 font-medium text-sm">30/12/2563 - 10.00</div>
                     </div>
                 </div>
-                <div className="shipping lg:flex lg:mb-3 lg:flex-col grid items-center justify-start mb-10" style={{ gridTemplateColumns: "min-content auto" }}>
-                    <div className="icon lg:mr-0 lg:mb-2 lg:w-8 lg:h-8 w-16 h-16 bg-gray-200 rounded-full mr-7"></div>
+                <div className="shipping lg:flex lg:mb-3 lg:flex-col grid items-center justify-start gap-6 mb-10" style={{ gridTemplateColumns: "min-content auto" }}>
+                    <div className="lg:mb-2 w-full relative flex items-center justify-center">
+                        <span className="lg:w-1/2 lg:-translate-y-1/2 lg:top-1/2 lg:-translate-x-0 lg:border-none lg:bg-gray-100 lg:h-0.5 a w-0.5 h-1/2 absolute border border-dashed border-gray-100 transform-translate-x-1/2 -translate-y-0 top-full left-1/2" ></span>
+                        <span className="lg:w-1/2 lg:-translate-y-1/2 lg:top-1/2 lg:-translate-x-full lg:border-none lg:bg-gray-100 lg:h-0.5 a w-0.5 h-1/2 absolute border border-dashed border-gray-100 transform -translate-x-1/2 -translate-y-1/2 top-0 left-1/2"></span>
+                        <div className="icon lg:mr-0 lg:w-10 lg:h-10 lg:flex lg:items-center lg:justify-center relative w-16 h-16 bg-gray-100 rounded-full z-10">
+                            <div className="lg:block hidden w-5 h-5 rounded-full bg-gray-300"></div>
+                            {/* <img src={check} className="w-3 h-3 absolute" /> */}
+                        </div>
+                    </div>
                     <div className="description">
                         <div className="title lg:text-xs text-xl text-gray-400 font-semibold">อยู่ระหว่างการจัดส่ง</div>
                         <div className="date lg:text-smaller text-gray-400 font-medium text-sm"></div>
                     </div>
                 </div>
-                <div className="success lg:flex lg:flex-col grid items-center justify-start" style={{ gridTemplateColumns: "min-content auto" }}>
-                    <div className="icon lg:mr-0 lg:mb-2 lg:w-8 lg:h-8 w-16 h-16 bg-gray-200 rounded-full mr-7"></div>
+                <div className="success lg:flex lg:flex-col grid items-center justify-start gap-6" style={{ gridTemplateColumns: "min-content auto" }}>
+                    <div className="lg:mb-2 w-full relative flex items-center justify-center">
+                        <span className="lg:w-1/2 lg:-translate-y-1/2 lg:top-1/2 lg:-translate-x-full lg:border-none lg:bg-gray-100 lg:h-0.5 a w-0.5 h-1/2 absolute border border-dashed border-gray-100 transform -translate-x-1/2 -translate-y-1/2 top-0 left-1/2"></span>
+                        <div className="icon lg:mr-0 lg:w-10 lg:h-10 lg:flex lg:items-center lg:justify-center relative w-16 h-16 bg-gray-100 rounded-full z-10">
+                            <div className="lg:block hidden w-5 h-5 rounded-full bg-gray-300"></div>
+                            {/* <img src={check} className="w-3 h-3 absolute" /> */}
+                        </div>
+                    </div>
                     <div className="description">
                         <div className="title lg:text-xs text-xl text-gray-400 font-semibold">สำเร็จ</div>
                         <div className="date lg:text-smaller text-gray-400 font-medium text-sm"></div>

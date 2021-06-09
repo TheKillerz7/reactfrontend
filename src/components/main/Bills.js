@@ -1,13 +1,18 @@
+import React, { useRef, useEffect, useState } from 'react'
+
 const Bills = ({ bill }) => {
     let totalPrice = 0
 
+    const heightRef = useRef(null)
+    const [close, setClose] = useState(false)
+
     return(
-        <div className="lg:mb-6 shadow bg-white">
-            <div className="title lg:px-8 cursor-pointer flex items-center justify-between px-5 py-3 border-t-2 border-b-2 border-gray-200">
+        <div className="lg:mb-6 shadow bg-white overflow-hidden" style={{ maxHeight: (close && heightRef.current.offsetHeight + "px" || "500px"), transition: "max-height 0.5s ease" }}>
+            <div ref={heightRef} className="title lg:px-8 cursor-pointer flex items-center justify-between px-5 py-3 border-t-2 border-b-2 border-gray-200">
                 <div className="font-semibold text-sm">การชำระเงิน</div>
-                <div className="bill-status flex items-center">
-                    <span className="text-green-700 font-semibold mr-3">{bill.status === "paid" && "ชำระเงินแล้ว" || "ยังไม่ได้ชำระเงิน"}</span>
-                    <div className="arrow">V</div>
+                <div className="bill-status flex items-center" onClick={() => setClose(!close)}>
+                    <span className="text-orange font-semibold mr-3">{bill.status === "paid" && "ชำระเงินแล้ว" || "ยังไม่ได้ชำระเงิน"}</span>
+                    <div className={"arrow transform transition duration-300 " + (!close && "rotate-180")}>V</div>
                 </div>
             </div>
             <div className="detail pt-4">

@@ -1,20 +1,26 @@
+import Ham from '../../assets/svgs/Hamburger'
+import React, { useState } from 'react';
+
 const Navbar = ({ info }) => {
+    const [transform, setTransform] = useState(false)
+
     return(
-        <div className="nav-container lg:px-14 lg:py-7 shadow-md flex items-center justify-between px-5 py-3 bg-white">
+        <div className="nav-container lg:px-14 lg:py-7 relative shadow-md flex items-center justify-between px-5 py-3 bg-white">
             <div className="logo font-semibold">LOGO</div>
             <div className="menu-container flex">
-                <ul className="menu-list lg:flex items-center hidden mr-16">
-                    <li className="mr-6">สั่งอาหาร</li>
-                    <li className="mr-6">แพ็คเกจอาหาร</li>
-                    <li className="mr-6">ลงทุน</li>
-                    <li className="mr-6">สมัครเป็นร้านค้า</li>
+                <ul className={"menu-list lg:flex-row text-lg flex flex-col justify-center w-full items-center bg-white transform left-0 top-0 z-20 fixed h-screen mr-16 transition duration-300 " + (!transform && "translate-x-full")}>
+                    <div className="absolute z-30 text-3xl right-7 top-5" onClick={() => setTransform(false)}>x</div>
+                    <li className="lg:mr-6 lg:mb-0 mb-10">สั่งอาหาร</li>
+                    <li className="lg:mr-6 lg:mb-0 mb-10">แพ็คเกจอาหาร</li>
+                    <li className="lg:mr-6 lg:mb-0 mb-10">ลงทุน</li>
+                    <li className="lg:mr-6 lg:mb-0 mb-10">สมัครเป็นร้านค้า</li>
                 </ul>
                 <div className="basket mr-4 flex items-center justify-center">B</div>
                 <div className="profile flex items-center mr-2">
                     <div className="picture rounded-full bg-gray-500 w-8 h-8 flex items-center justify-center mr-2">{info.picture}</div>
                     <div className="name text-sm">{info.name}</div>
                 </div>
-                <div className="hamburger lg:hidden text-lg flex items-center">H</div>
+                <div className="hamburger lg:hidden text-lg flex items-center ml-3" onClick={() => setTransform(true)}><Ham ClassName="w-4" color="black" /></div>
             </div>
         </div>
     )
