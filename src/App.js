@@ -72,7 +72,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Navbar info={navInfo} />
       <div className="bg-gray-50">
         <div className="lg:grid lg:items-center lg:gap-10 lg:justify-between lg:px-14 lg:pt-10 bg-gray-50 mx-auto" style={{ gridTemplateColumns: "max-content 1fr", maxWidth: "1500px" }}>
@@ -86,7 +86,7 @@ function App() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

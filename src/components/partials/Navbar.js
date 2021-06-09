@@ -8,8 +8,8 @@ const Navbar = ({ info }) => {
         <div className="nav-container lg:px-14 lg:py-7 relative shadow-md flex items-center justify-between px-5 py-3 bg-white">
             <div className="logo font-semibold">LOGO</div>
             <div className="menu-container flex">
-                <ul className={"menu-list lg:flex-row text-lg flex flex-col justify-center w-full items-center bg-white transform left-0 top-0 z-20 fixed h-screen mr-16 transition duration-300 " + (!transform && "translate-x-full")}>
-                    <div className="absolute z-30 text-3xl right-7 top-5" onClick={() => setTransform(false)}>x</div>
+                <ul className={"menu-list xl:text-base lg:text-sm lg:flex-row lg:static lg:h-auto lg:transform-none text-lg flex flex-col justify-center w-full items-center bg-white transform left-0 top-0 z-20 fixed h-screen mr-16 transition duration-300 " + (!transform && "translate-x-full")}>
+                    <div className="lg:hidden absolute z-30 text-3xl right-7 top-5" onClick={() => setTransform(false)}>x</div>
                     <li className="lg:mr-6 lg:mb-0 mb-10">สั่งอาหาร</li>
                     <li className="lg:mr-6 lg:mb-0 mb-10">แพ็คเกจอาหาร</li>
                     <li className="lg:mr-6 lg:mb-0 mb-10">ลงทุน</li>
