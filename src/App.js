@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/partials/Navbar'
-import Header from './components/Header'
-import Footerr from './components/Footer'
+// import Header from './components/Header'
+// import Footerr from './components/Footer'
 import Footer from './components/partials/Footer'
 import OrderFood from './pages/OrderFood'
 import HomePage from './pages/RestaurantCutom/HomePage'
