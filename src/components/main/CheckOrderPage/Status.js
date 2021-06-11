@@ -1,4 +1,4 @@
-import Check from '../../assets/svgs/Check'
+import Check from '../../../assets/svgs/Check'
 
 const Status = ({ order }) => {
 
