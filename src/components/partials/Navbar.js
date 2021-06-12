@@ -7,7 +7,7 @@ const Navbar = ({ info }) => {
     const [transform, setTransform] = useState(false)
 
     return(
-        <div className="nav-container lg:px-14 lg:py-7 relative shadow-md flex items-center justify-between px-5 py-3 bg-white">
+        <div className="nav-container lg:px-14 lg:py-7 relative shadow-md flex items-center justify-between px-5 py-3 bg-white" style={{ zIndex: "10000" }}>
             <div className="logo font-semibold">LOGO</div>
             <div className="menu-container flex">
                 <ul className={"menu-list xl:text-base lg:text-sm lg:flex-row lg:static lg:h-auto lg:transform-none text-lg flex flex-col justify-center w-full items-center bg-white transform left-0 top-0 z-20 fixed h-screen mr-16 transition duration-300 " + (!transform && "translate-x-full")}>

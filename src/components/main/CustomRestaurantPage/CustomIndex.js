@@ -4,11 +4,11 @@ import Restaurant from './Custom/Restaurant'
 import Character from './Custom/Character'
 import Menus from './Custom/Menus'
 
-const Home = ({ index, setIndex }) => {
+const Home = ({ index, setIndex, refs }) => {
     const [steps, setStep] = useState(0)
     
     return(
-        <div className={"absolute transition duration-500 left-0 top-0 w-full transform h-full bg-white " + (index !== "custom" && "translate-x-full" || "translate-x-0")}>
+        <div ref={refs} className={"lg:h-auto absolute z-20 h-full transition duration-500 left-0 top-0 w-full transform bg-white pb-16 " + (index !== "custom" && "translate-x-full" || "translate-x-0 delay-200")}>
             <StepComponent setIndex={setIndex} setStep={setStep} steps={steps} />
             <div className="relative flex overflow-hidden" style={{ width: "300%" }}>
                 <Restaurant steps={steps} setStep={setStep} />
@@ -28,7 +28,7 @@ const StepComponent = ({ setIndex, steps, setStep }) => {
     i--
 
     return(
-        <div className="px-5">
+        <div className="lg:px-56 mb-10 px-5" style={{ maxWidth: "1000px" }}>
             <div onClick={() => (steps === 0 ? setIndex('home') : setStep(i))} className="font-semibold text-xs flex items-center my-5"><span className="text-lg mr-3 pb-1">{"<"} </span>เลือกร้านค้า</div>
             <div className="step grid grid-cols-3">
                 <div className="restaurant">

@@ -1,0 +1,88 @@
+.container-footer {
+    /* max-width: 980px; */
+    margin: 0 auto;
+  }
+.footer {
+    background: #F0F0F0;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    overflow: hidden;
+}
+.footer_setting {
+    background-color: #F0F0F0;
+}
+
+#logo_map_detail_footer h2 {
+    font-size: 40px;
+    font-weight: bold
+}
+
+#logo_map_detail_footer p {
+    font-size: 24px;
+    color: #848484;
+}
+
+
+/* #deliverFood_footer */
+
+#deliverFood_footer h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#deliverFood_footer>ul>li {
+    list-style: none;
+}
+
+#deliverFood_footer>ul>li>a {
+    font-size: 25px;
+    color: #848484;
+    text-decoration: none;
+}
+
+
+/* investment_footer */
+
+#investment_footer h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#investment_footer>ul>li {
+    list-style: none;
+}
+
+#investment_footer>ul>li>a {
+    font-size: 25px;
+    color: #848484;
+    text-decoration: none;
+}
+
+
+/* help_footer */
+
+#help_footer h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#help_footer>ul>li {
+    list-style: none;
+}
+
+#help_footer>ul>li>a {
+    font-size: 25px;
+    color: #848484;
+    text-decoration: none;
+}
+
+
+/* footer_copyright */
+
+#footer_copyright p {
+    font-size: 25px;
+    color: #848484;
+}
