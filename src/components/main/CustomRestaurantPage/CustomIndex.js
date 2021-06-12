@@ -10,12 +10,10 @@ const Home = ({ index, setIndex, refs }) => {
     return(
         <div ref={refs} className={"lg:h-auto absolute z-20 h-full transition duration-500 left-0 top-0 w-full transform bg-white pb-16 " + (index !== "custom" && "translate-x-full" || "translate-x-0 delay-200")}>
             <StepComponent setIndex={setIndex} setStep={setStep} steps={steps} />
-            <div className="relative flex overflow-hidden" style={{ width: "300%" }}>
+            <div className="relative grid grid-cols-3 overflow-hidden" style={{ width: "300%" }}>
                 <Restaurant steps={steps} setStep={setStep} />
-                <Restaurant steps={steps} setStep={setStep} />
-                <Restaurant steps={steps} setStep={setStep} />
-                {/* <Character steps={steps} setStep={setStep} />
-                <Menus steps={steps} setStep={setStep} /> */}
+                <Character steps={steps} setStep={setStep} />
+                <Menus steps={steps} setStep={setStep} />
             </div>
         </div>
     )
@@ -24,12 +22,13 @@ const Home = ({ index, setIndex, refs }) => {
 export default Home
 
 const StepComponent = ({ setIndex, steps, setStep }) => {
+    const currentStep = ["หน้าหลัก", "เลือกร้านค้า", "เลือกตัวละคร"]
     let i = steps
     i--
 
     return(
-        <div className="lg:px-56 mb-10 px-5" style={{ maxWidth: "1000px" }}>
-            <div onClick={() => (steps === 0 ? setIndex('home') : setStep(i))} className="font-semibold text-xs flex items-center my-5"><span className="text-lg mr-3 pb-1">{"<"} </span>เลือกร้านค้า</div>
+        <div className="xl:mt-10 xl:relative lg:px-56 mx-auto mb-10 px-5" style={{ maxWidth: "1000px" }}>
+            <div onClick={() => (steps === 0 ? setIndex('home') : setStep(i))} className="xl:absolute xl:top-0 xl:mt-0 xl:-left-0 xl:text-lg font-semibold text-xs cursor-pointer flex items-center my-5"><span className="xl:text-2xl xl:pb-0 text-lg mr-3 pb-1">{"<"} </span>{currentStep[steps]}</div>
             <div className="step grid grid-cols-3">
                 <div className="restaurant">
                     <div className="w-full relative flex justify-center items-center">

@@ -4,11 +4,15 @@ import restaurant from '../../../../assets/imgs/restaurant.png'
 const Restaurant = ({ steps, setStep }) => {
     return(
         <div className="lg:px-36 md:w-full px-5 transition duration-300" style={{ transform: (`translateX(-${100*steps}%)`) }}>
-            <div className="md:px-20 text-gray-500 mb-12">
+            <div className="xl:w-3/12 xl:hidden xl:absolute xl:left-5 md:px-20 text-gray-500 mb-12">
                 <h2 className="font-semibold text-gray-400 mb-3">เลือกธีมสำหรับตกแต่งร้าน</h2>
                 <p className="text-xs">Lorem iqsum doror sit amit, conmsectetur adioiscing elit. Etima ulrtices odio non ligula rempr, ut</p>
             </div>
-            <div className="md:px-20 flex flex-col items-center justify-center">
+            <div className="xl:px-56 xl:mx-auto md:px-20 relative flex flex-col items-center justify-center" style={{ maxWidth: "1000px" }}>
+                <div className="xl:w-5/12 xl:absolute xl:block xl:top-0 xl:-left-32 md:px-20 hidden text-gray-500 mb-12">
+                    <h2 className="font-semibold text-gray-400 mb-3">เลือกธีมสำหรับตกแต่งร้าน</h2>
+                    <p className="text-xs">Lorem iqsum doror sit amit, conmsectetur adioiscing elit. Etima ulrtices odio non ligula rempr, ut</p>
+                </div>
                 <div className="text-gray-500 mb-2">ร้านค้า</div>
                 <div className="md:h-80 relative w-full flex justify-center">
                     <div className="md:h-64 h-36 overflow-hidden mb-10">
@@ -36,7 +40,7 @@ const Restaurant = ({ steps, setStep }) => {
                     i++
                     setStep(i)
                 }}
-                    className="bg-orange bg-opacity-90 text-white px-16 py-2 rounded-lg font-semibold"
+                    className="lg:px-36 bg-orange bg-opacity-90 text-white px-16 py-2 rounded-lg font-semibold"
                 >
                     ขั้นตอนต่อไป
                 </button>

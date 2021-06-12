@@ -19,10 +19,10 @@ function App() {
 
   return (
     <Router>
-      <div className="overflow-x-hidden">
+      <div className="overflow-hidden">
         <Navbar info={navInfo} />
         <Switch>
-          <div className="bg-gray-50">
+          <div className="">
             <Route path="/" exact component={OrderFood} />
             <Route path="/restaurant" component={HomePage} />
           </div>
