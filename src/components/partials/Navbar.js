@@ -7,24 +7,24 @@ const Navbar = ({ info }) => {
     const [transform, setTransform] = useState(false)
 
     return(
-        <div className="nav-container lg:px-14 lg:py-7 relative shadow-md flex items-center justify-between px-5 py-3 bg-white" style={{ zIndex: "10000" }}>
-            <div className="logo font-semibold">LOGO</div>
-            <div className="menu-container flex">
-                <ul className={"menu-list xl:text-base lg:text-sm lg:flex-row lg:static lg:h-auto lg:transform-none text-lg flex flex-col justify-center w-full items-center bg-white transform left-0 top-0 z-20 fixed h-screen mr-16 transition duration-300 " + (!transform && "translate-x-full")}>
+        <div className="nav-container lg:tw-px-14 lg:tw-py-7 tw-relative tw-shadow-md tw-flex tw-items-center tw-justify-between tw-px-5 tw-py-3 tw-bg-white" style={{ zIndex: "10000" }}>
+            <div className="logo tw-font-semibold">LOGO</div>
+            <div className="menu-container tw-flex">
+                <ul className={"menu-list xl:tw-text-base lg:tw-text-sm lg:tw-flex-row lg:tw-static lg:tw-h-auto lg:tw-transform-none tw-text-lg tw-flex tw-flex-col tw-justify-center tw-w-full tw-items-center tw-bg-white tw-transform tw-left-0 tw-top-0 tw-z-20 tw-fixed tw-h-screen tw-mr-16 tw-transition tw-duration-300 " + (!transform && "tw-translate-x-full")}>
                     {/* closing navigation links and set state to false to transform it back */}
-                    <div className="lg:hidden absolute z-30 text-3xl right-7 top-5" onClick={() => setTransform(false)}>x</div>
-                    <li className="lg:mr-6 lg:mb-0 mb-10">สั่งอาหาร</li>
-                    <li className="lg:mr-6 lg:mb-0 mb-10">แพ็คเกจอาหาร</li>
-                    <li className="lg:mr-6 lg:mb-0 mb-10">ลงทุน</li>
-                    <li className="lg:mr-6 lg:mb-0 mb-10">สมัครเป็นร้านค้า</li>
+                    <div className="lg:tw-hidden tw-absolute tw-z-30 tw-text-3xl tw-right-7 tw-top-5" onClick={() => setTransform(false)}>x</div>
+                    <li className="lg:tw-mr-6 lg:tw-mb-0 tw-mb-10">สั่งอาหาร</li>
+                    <li className="lg:tw-mr-6 lg:tw-mb-0 tw-mb-10">แพ็คเกจอาหาร</li>
+                    <li className="lg:tw-mr-6 lg:tw-mb-0 tw-mb-10">ลงทุน</li>
+                    <li className="lg:tw-mr-6 lg:tw-mb-0 tw-mb-10">สมัครเป็นร้านค้า</li>
                 </ul>
-                <div className="basket mr-4 flex items-center justify-center">B</div>
-                <div className="profile flex items-center mr-2">
-                    <div className="picture rounded-full bg-gray-500 w-8 h-8 flex items-center justify-center mr-2">{info.picture}</div>
-                    <div className="name text-sm">{info.name}</div>
+                <div className="basket tw-mr-4 tw-flex tw-items-center tw-justify-center">B</div>
+                <div className="profile tw-flex tw-items-center tw-mr-2">
+                    <div className="picture tw-rounded-full tw-bg-gray-500 tw-w-8 tw-h-8 tw-flex tw-items-center tw-justify-center tw-mr-2">{info.picture}</div>
+                    <div className="name tw-text-sm">{info.name}</div>
                 </div>
                 {/* Hamburger click and it will set state to true for transforming */}
-                <div className="hamburger lg:hidden text-lg flex items-center ml-3" onClick={() => setTransform(true)}><Ham ClassName="w-4" color="black" /></div>
+                <div className="hamburger lg:tw-hidden tw-text-lg tw-flex tw-items-center tw-ml-3" onClick={() => setTransform(true)}><Ham ClassName="tw-w-4" color="black" /></div>
             </div>
         </div>
     )

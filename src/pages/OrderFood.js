@@ -70,9 +70,9 @@ const OrderFood = () => {
   }
 
     return(
-        <div className="lg:grid lg:items-center lg:gap-10 lg:justify-between lg:px-14 lg:pt-10 bg-gray-50 mx-auto" style={{ gridTemplateColumns: "max-content 1fr", maxWidth: "1500px" }}>
+        <div className="lg:tw-grid lg:tw-items-center lg:tw-gap-10 lg:tw-justify-between lg:tw-px-14 lg:tw-pt-10 tw-bg-gray-50 tw-mx-auto" style={{ gridTemplateColumns: "max-content 1fr", maxWidth: "1500px" }}>
             <Profile profile={profile} />
-            <div className="w-full">
+            <div className="tw-w-full">
                 <Status order={order} />
                 <Products products={products} />
                 <Bills bill={bill} />

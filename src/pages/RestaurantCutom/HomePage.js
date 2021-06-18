@@ -16,7 +16,7 @@ const HomePage = () => {
     }, [])
 
     return(
-        <div className="relative">
+        <div className="tw-relative">
             <Home customHeight={heightState} index={index} setIndex={setIndex} />
             <CustomIndex refs={height} index={index} setIndex={setIndex} />
         </div>

@@ -8,9 +8,9 @@ const Home = ({ index, setIndex, refs }) => {
     const [steps, setStep] = useState(0)
     
     return(
-        <div ref={refs} className={"lg:h-auto absolute z-20 h-full transition duration-500 left-0 top-0 w-full transform bg-white pb-16 " + (index !== "custom" && "translate-x-full" || "translate-x-0 delay-200")}>
+        <div ref={refs} className={"lg:tw-h-auto tw-absolute tw-z-20 tw-h-full tw-transition tw-duration-500 tw-left-0 tw-top-0 tw-w-full tw-transform tw-bg-white tw-pb-16 " + (index !== "custom" && "tw-translate-x-full" || "tw-translate-x-0 tw-delay-200")}>
             <StepComponent setIndex={setIndex} setStep={setStep} steps={steps} />
-            <div className="relative grid grid-cols-3 overflow-hidden" style={{ width: "300%" }}>
+            <div className="tw-relative tw-grid tw-grid-cols-3 tw-overflow-hidden" style={{ width: "300%" }}>
                 <Restaurant steps={steps} setStep={setStep} />
                 <Character steps={steps} setStep={setStep} />
                 <Menus steps={steps} setStep={setStep} />
@@ -27,41 +27,41 @@ const StepComponent = ({ setIndex, steps, setStep }) => {
     i--
 
     return(
-        <div className="xl:mt-10 xl:relative lg:px-56 mx-auto mb-10 px-5" style={{ maxWidth: "1000px" }}>
-            <div onClick={() => (steps === 0 ? setIndex('home') : setStep(i))} className="xl:absolute xl:top-0 xl:mt-0 xl:-left-0 xl:text-lg font-semibold text-xs cursor-pointer flex items-center my-5"><span className="xl:text-2xl xl:pb-0 text-lg mr-3 pb-1">{"<"} </span>{currentStep[steps]}</div>
-            <div className="step grid grid-cols-3">
+        <div className="xl:tw-mt-10 xl:tw-relative lg:tw-px-56 tw-mx-auto tw-mb-10 tw-px-5" style={{ maxWidth: "1000px" }}>
+            <div onClick={() => (steps === 0 ? setIndex('home') : setStep(i))} className="xl:tw-absolute xl:tw-top-0 xl:tw-mt-0 xl:tw--left-0 xl:tw-text-lg tw-font-semibold tw-text-xs tw-cursor-pointer tw-flex tw-items-center tw-my-5"><span className="xl:tw-text-2xl xl:tw-pb-0 tw-text-lg tw-mr-3 tw-pb-1">{"<"} </span>{currentStep[steps]}</div>
+            <div className="step tw-grid tw-grid-cols-3">
                 <div className="restaurant">
-                    <div className="w-full relative flex justify-center items-center">
-                        <div className="w-8 h-8 z-10 bg-lightGreen flex justify-center items-center relative rounded-full">
-                            <div className="w-4 h-4 bg-pGreen rounded-full"></div>
-                            <Check ClassName="absolute w-2 h-2" color="white" />
+                    <div className="tw-w-full tw-relative tw-flex tw-justify-center tw-items-center">
+                        <div className="tw-w-8 tw-h-8 tw-z-10 tw-bg-lightGreen tw-flex tw-justify-center tw-items-center tw-relative tw-rounded-full">
+                            <div className="tw-w-4 tw-h-4 tw-bg-pGreen tw-rounded-full"></div>
+                            <Check ClassName="tw-absolute tw-w-2 tw-h-2" color="white" />
                         </div>
-                        <span className="h-0.5 w-full overflow-hidden absolute bg-gray-300 transform translate-x-1/2 right-0">
-                            <span className={"h-0.5 w-full transform transition duration-500 absolute bg-pGreen right-0 " + (steps > 0 && "translate-x-0" || "-translate-x-full")}></span>
+                        <span className="tw-h-0.5 tw-w-full tw-overflow-hidden tw-absolute tw-bg-gray-300 tw-transform tw-translate-x-1/2 tw-right-0">
+                            <span className={"tw-h-0.5 tw-w-full tw-transform tw-transition tw-duration-500 tw-absolute tw-bg-pGreen tw-right-0 " + (steps > 0 && "tw-translate-x-0" || "tw--translate-x-full")}></span>
                         </span>
                     </div>
-                    <div className="text-xs mt-3 text-center text-green-700 font-semibold">เลือกธีมตกแต่งร้าน</div>
+                    <div className="tw-text-xs tw-mt-3 tw-text-center tw-text-green-700 tw-font-semibold">เลือกธีมตกแต่งร้าน</div>
                 </div>
                 <div className="character">
-                    <div className="w-full relative flex justify-center items-center">
-                        <div className={"w-8 h-8 z-10 flex justify-center items-center relative rounded-full transition duration-300 " + (steps < 1 && "bg-gray-100" || "bg-lightGreen")}>
-                            <div className={"w-4 h-4 rounded-full transition duration-300 " + (steps < 1 && "bg-gray-300" || "bg-pGreen")}></div>
-                            <Check ClassName={"absolute w-2 h-2 transition duration-300 " + (steps < 1 && "opacity-0")} color="white" />
+                    <div className="tw-w-full tw-relative tw-flex tw-justify-center tw-items-center">
+                        <div className={"tw-w-8 tw-h-8 tw-z-10 tw-flex tw-justify-center tw-items-center tw-relative tw-rounded-full tw-transition tw-duration-300 " + (steps < 1 && "tw-bg-gray-100" || "tw-bg-lightGreen")}>
+                            <div className={"tw-w-4 tw-h-4 tw-rounded-full tw-transition tw-duration-300 " + (steps < 1 && "tw-bg-gray-300" || "tw-bg-pGreen")}></div>
+                            <Check ClassName={"tw-absolute tw-w-2 tw-h-2 tw-transition tw-duration-300 " + (steps < 1 && "tw-opacity-0")} color="white" />
                         </div>
-                        <span className="h-0.5 w-full overflow-hidden absolute bg-gray-300 transform translate-x-1/2 right-0">
-                            <span className={"h-0.5 w-full transform transition duration-500 absolute bg-pGreen right-0 " + (steps > 1 && "translate-x-0" || "-translate-x-full")}></span>
+                        <span className="tw-h-0.5 tw-w-full tw-overflow-hidden tw-absolute tw-bg-gray-300 tw-transform tw-translate-x-1/2 tw-right-0">
+                            <span className={"tw-h-0.5 tw-w-full tw-transform tw-transition tw-duration-500 tw-absolute tw-bg-pGreen tw-right-0 " + (steps > 1 && "tw-translate-x-0" || "tw--translate-x-full")}></span>
                         </span>
                     </div>
-                    <div className={"text-xs mt-3 text-center font-semibold transition duration-300 " + (steps < 1  && "text-gray-400" || "text-green-700")}>เลือกตัวละคร</div>
+                    <div className={"tw-text-xs tw-mt-3 tw-text-center tw-font-semibold tw-transition tw-duration-300 " + (steps < 1  && "tw-text-gray-400" || "tw-text-green-700")}>เลือกตัวละคร</div>
                 </div>
                 <div className="food-menu">
-                    <div className="w-full relative flex justify-center items-center">
-                        <div className={"w-8 h-8 z-10 flex justify-center items-center relative rounded-full transition duration-300 " + (steps < 2 && "bg-gray-100" || "bg-lightGreen")}>
-                            <div className={"w-4 h-4 rounded-full transition duration-300 " + (steps < 2 && "bg-gray-300" || "bg-pGreen")}></div>
-                            <Check ClassName={"absolute w-2 h-2 transition duration-300 " + (steps < 2 && "opacity-0")} color="white" />
+                    <div className="tw-w-full tw-relative tw-flex tw-justify-center tw-items-center">
+                        <div className={"tw-w-8 tw-h-8 tw-z-10 tw-flex tw-justify-center tw-items-center tw-relative tw-rounded-full tw-transition tw-duration-300 " + (steps < 2 && "tw-bg-gray-100" || "tw-bg-lightGreen")}>
+                            <div className={"tw-w-4 tw-h-4 tw-rounded-full tw-transition tw-duration-300 " + (steps < 2 && "tw-bg-gray-300" || "tw-bg-pGreen")}></div>
+                            <Check ClassName={"tw-absolute tw-w-2 tw-h-2 tw-transition tw-duration-300 " + (steps < 2 && "tw-opacity-0")} color="white" />
                         </div>
                     </div>
-                    <div className={"text-xs mt-3 text-center font-semibold transition duration-300 " + (steps < 2  && "text-gray-400" || "text-green-700")}>เลือกอาหาร</div>
+                    <div className={"tw-text-xs tw-mt-3 tw-text-center tw-font-semibold tw-transition tw-duration-300 " + (steps < 2  && "tw-text-gray-400" || "tw-text-green-700")}>เลือกอาหาร</div>
                 </div>
             </div>
         </div>

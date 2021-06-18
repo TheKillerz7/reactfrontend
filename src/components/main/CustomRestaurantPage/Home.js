@@ -19,47 +19,47 @@ const Home = ({ index, setIndex, customHeight }) => {
     }, [])
 
     return(
-        <div className={"home-container lg:h-auto pb-10 transition-all duration-300 " + (index == "home" && "delay-300")} style={{ height: `${customHeight?.current?.offsetHeight}px`, maxHeight: (styleObject[index]) }}>
-            <img className="lg:block w-full object-cover hidden left-0 -top-5 absolute" className="absolute top-0 laft-0" src={decoration} style={{ zIndex: '-1' }} />
-            <img className="lg:hidden h-80 object-cover left-1/2 transform -translate-x-1/2 top-5 absolute" src={decoration_mobile} />
-            <div className="xl:px-10 lg:grid lg:grid-cols-2 lg:pt-20 lg:gap-16 lg:px-20 px-5 mx-auto relative" style={{ maxWidth: "1000px" }}>
-                <div className="lg:p-0 pt-10 pb-5 mb-5 z-10">
-                    <div className="lg:w-96 lg:h-96 lg:bg-green-900 lg:bg-opacity-10 relative rounded-full flex mx-auto w-80 h-80">
-                        <div className="lg:hidden absolute overflow-hidden rounded-full top-3 left-0 w-full h-full">
-                            <img className="absolute pb w-full top-0 left-0" src={background_1} />
-                            <img className="absolute pb w-full -bottom-10 -left-48" src={restaurant} />
-                            <img className="absolute pb h-4/6 bottom-0 left-20" src={character} />
+        <div className={"home-container lg:tw-h-auto tw-pb-10 tw-transition-all tw-duration-300 " + (index == "home" && "tw-delay-300")} style={{ height: `${customHeight?.current?.offsetHeight}px`, maxHeight: (styleObject[index]) }}>
+            <img className="lg:tw-block tw-w-full tw-object-cover tw-hidden tw-left-0 tw--top-5 tw-absolute" src={decoration} style={{ zIndex: '-1' }} />
+            <img className="lg:tw-hidden tw-h-80 tw-object-cover tw-left-1/2 tw-transform tw--translate-x-1/2 tw-top-5 tw-absolute" src={decoration_mobile} />
+            <div className="xl:tw-px-10 lg:tw-grid lg:tw-grid-cols-2 lg:tw-pt-20 lg:tw-gap-16 lg:tw-px-20 tw-px-5 tw-mx-auto tw-relative" style={{ maxWidth: "1000px" }}>
+                <div className="lg:tw-p-0 tw-pt-10 tw-pb-5 tw-mb-5 tw-z-10">
+                    <div className="lg:tw-w-96 lg:tw-h-96 lg:tw-bg-green-900 lg:tw-bg-opacity-10 tw-relative tw-rounded-full tw-flex tw-mx-auto tw-w-80 tw-h-80">
+                        <div className="lg:tw-hidden tw-absolute tw-overflow-hidden tw-rounded-full tw-top-3 tw-left-0 tw-w-full tw-h-full">
+                            <img className="tw-absolute tw-pb tw-w-full tw-top-0 tw-left-0" src={background_1} />
+                            <img className="tw-absolute tw-pb tw-w-full tw--bottom-10 tw--left-48" src={restaurant} />
+                            <img className="tw-absolute tw-pb tw-h-4/6 tw-bottom-0 tw-left-20" src={character} />
                         </div>
-                        <div className="lg:text-8xl lg:p-0 pl-10 text-7xl pt-3 text-gray-500">3</div>
-                        <div className="lg:text-2xl text-xl text-gray-400 font-medium">ขั้นตอนง่าย ๆ<br/>ในการเปิดแฟรนไชส์</div>
+                        <div className="lg:tw-text-8xl lg:tw-p-0 tw-pl-10 tw-text-7xl tw-pt-3 tw-text-gray-500">3</div>
+                        <div className="lg:tw-text-2xl tw-text-xl tw-text-gray-400 tw-font-medium">ขั้นตอนง่าย ๆ<br/>ในการเปิดแฟรนไชส์</div>
                     </div>
                 </div>
-                <div className="lg:flex lg:flex-col lg:justify-end lg:pb-16">
-                    <p className="lg:text-sm text-xs text-gray-400 mb-7">Lorem iqrun isd rqu rudct<br/>Lorem iqrun isd rqu rudctLorem iqrun isd rqu rudct</p>
-                    <div className="lg:grid-cols-3 grid grid-cols-2 gap-x-2 gap-y-4 items-center justify-start mb-10">
-                        <div className="lg:py-5 shadow-md rounded-lg px-5 py-8 flex items-center justify-between">
+                <div className="lg:tw-flex lg:tw-flex-col lg:tw-justify-end lg:tw-pb-16">
+                    <p className="lg:tw-text-sm tw-text-xs tw-text-gray-400 tw-mb-7">Lorem iqrun isd rqu rudct<br/>Lorem iqrun isd rqu rudctLorem iqrun isd rqu rudct</p>
+                    <div className="lg:tw-grid-cols-3 tw-grid tw-grid-cols-2 tw-gap-x-2 tw-gap-y-4 tw-items-center tw-justify-start tw-mb-10">
+                        <div className="lg:tw-py-5 tw-shadow-md tw-ounded-lg tw-px-5 tw-py-8 tw-flex tw-items-center tw-justify-between">
                             <div className="">
-                                <p className="lg:text-sm lg:-mb-1 text-xs text-gray-500">เลือก</p>
-                                <p className="lg:text-smaller text-sm font-medium text-gray-500">ตกแต่งร้าน</p>
+                                <p className="lg:tw-text-sm lg:tw--mb-1 tw-text-xs tw-text-gray-500">เลือก</p>
+                                <p className="lg:tw-text-smaller tw-text-sm tw-font-medium tw-text-gray-500">ตกแต่งร้าน</p>
                             </div>
-                            <div className="w-7 h-7 bg-gray-400"></div>
+                            <div className="tw-w-7 tw-h-7 tw-bg-gray-400"></div>
                         </div>
-                        <div className="lg:py-5 shadow-md rounded-lg px-5 py-8 flex items-center justify-between">
+                        <div className="lg:tw-py-5 tw-shadow-md tw-rounded-lg tw-px-5 tw-py-8 tw-flex tw-items-center tw-justify-between">
                             <div className="">
-                                <p className="lg:text-sm lg:-mb-1 text-xs text-gray-500">เลือก</p>
-                                <p className="lg:text-smaller text-sm font-medium text-gray-500">ตัวละคร</p>
+                                <p className="lg:tw-text-sm lg:tw--mb-1 tw-text-xs tw-text-gray-500">เลือก</p>
+                                <p className="lg:tw-text-smaller tw-text-sm tw-font-medium tw-text-gray-500">ตัวละคร</p>
                             </div>
-                            <div className="w-7 h-7 bg-gray-400"></div>
+                            <div className="tw-w-7 tw-h-7 tw-bg-gray-400"></div>
                         </div>
-                        <div className="lg:py-5 shadow-md rounded-lg px-5 py-8 flex items-center justify-between">
+                        <div className="lg:tw-py-5 tw-shadow-md tw-rounded-lg tw-px-5 tw-py-8 tw-flex tw-items-center tw-justify-between">
                             <div className="">
-                                <p className="lg:text-sm lg:-mb-1 text-xs text-gray-500">เลือก</p>
-                                <p className="lg:text-smaller text-sm font-medium text-gray-500">อาหาร</p>
+                                <p className="lg:tw-text-sm lg:tw--mb-1 tw-text-xs tw-text-gray-500">เลือก</p>
+                                <p className="lg:tw-text-smaller tw-text-sm tw-font-medium tw-text-gray-500">อาหาร</p>
                             </div>
-                            <div className="w-7 h-7 bg-gray-400"></div>
+                            <div className="tw-w-7 tw-h-7 tw-bg-gray-400"></div>
                         </div>
                     </div>
-                    <button onClick={() => setIndex("custom")} className="lg:text-lg lg:bg-orange py-3 self-end bg-yellow-600 text-white text-xs font-medium rounded-full px-7">Get Started &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--{'>'}</button>
+                    <button onClick={() => setIndex("custom")} className="lg:tw-text-lg lg:tw-bg-orange tw-py-3 tw-self-end tw-bg-yellow-600 tw-text-white tw-text-xs tw-font-medium tw-rounded-full tw-px-7">Get Started &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--{'>'}</button>
                 </div>
             </div>
         </div>

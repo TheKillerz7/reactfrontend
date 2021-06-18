@@ -1,24 +1,24 @@
 const Shipping = ({ shipping }) => {
     return(
-        <div className="lg:pb-6 lg:border-2 lg:border-gray-200 mt-3 mb-16 bg-white">
-            <div className="title lg:px-8 lg:border-t-0 text-sm font-semibold px-5 py-3 border-gray-200 border-b-2 border-t-2">ข้อมูลการจัดส่ง</div>
-            <div className="lg:shadow-none lg:mb-0 lg:px-8 px-5 pt-5 pb-10 mb-8 shadow">
-                <div className="mb-3 text-sm">ที่อยู่</div>
-                <div className="text-sm text-gray-400">{shipping.name} <br/> {shipping.address}</div>
+        <div className="lg:tw-pb-6 lg:tw-border-2 lg:tw-border-gray-200 tw-mt-3 tw-mb-16 tw-bg-white">
+            <div className="title lg:tw-px-8 lg:tw-border-t-0 tw-text-sm tw-font-semibold tw-px-5 tw-py-3 tw-border-gray-200 tw-border-b-2 tw-border-t-2">ข้อมูลการจัดส่ง</div>
+            <div className="lg:tw-shadow-none lg:tw-mb-0 lg:tw-px-8 tw-px-5 tw-pt-5 tw-pb-10 tw-mb-8 tw-shadow">
+                <div className="tw-mb-3 tw-text-sm">ที่อยู่</div>
+                <div className="tw-text-sm tw-text-gray-400">{shipping.name} <br/> {shipping.address}</div>
             </div>
-            <div className="lg:block hidden px-8 text-sm">
-                <div className="mb-4">สถานะการขนส่ง</div>
-                <div className="flex py-2 px-5 rounded-lg bg-gray-100">
-                    <div className="w-4 h-4 mr-3 mt-1 rounded-full bg-lightRed bg-opacity-50"></div>
+            <div className="lg:tw-block tw-hidden tw-px-8 tw-text-sm">
+                <div className="tw-mb-4">สถานะการขนส่ง</div>
+                <div className="tw-flex tw-py-2 tw-px-5 tw-rounded-lg tw-bg-gray-100">
+                    <div className="tw-w-4 tw-h-4 tw-mr-3 tw-mt-1 tw-rounded-full tw-bg-lightRed tw-bg-opacity-50"></div>
                     <div>
-                        <div className="text-lightRed text-opacity-80 font-semibold">กำลังดำเนินการ</div>
-                        <div className="text-gray-400">30/12/2563 - 10:00</div>
+                        <div className="tw-text-lightRed tw-text-opacity-80 tw-font-semibold">กำลังดำเนินการ</div>
+                        <div className="tw-text-gray-400">30/12/2563 - 10:00</div>
                     </div>
                 </div>
             </div>
-            <div className="lg:hidden px-5">
-                <div className="rounded-lg text-white bg-orange flex items-center justify-center p-3 text-xs font-semibold mb-3">ไปที่หน้าประวัติการสั่งซื้อของฉัน</div>
-                <div className="rounded-lg text-orange border border-orange flex items-center justify-center p-3 text-xs font-semibold">กลับหน้าแรก</div>
+            <div className="lg:tw-hidden tw-px-5">
+                <div className="tw-rounded-lg tw-text-white tw-bg-orange tw-flex tw-items-center tw-justify-center tw-p-3 tw-text-xs tw-font-semibold tw-mb-3">ไปที่หน้าประวัติการสั่งซื้อของฉัน</div>
+                <div className="tw-rounded-lg tw-text-orange tw-border tw-border-orange tw-flex tw-items-center tw-justify-center tw-p-3 tw-text-xs tw-font-semibold">กลับหน้าแรก</div>
             </div>
         </div>
     )

@@ -3,36 +3,36 @@ import restaurant from '../../../../assets/imgs/restaurant.png'
 
 const Restaurant = ({ steps, setStep }) => {
     return(
-        <div className="lg:px-36 md:w-full px-5 transition duration-300" style={{ transform: (`translateX(-${100*steps}%)`) }}>
-            <div className="xl:w-3/12 xl:hidden xl:absolute xl:left-5 md:px-20 text-gray-500 mb-12">
-                <h2 className="font-semibold text-gray-400 mb-3">เลือกธีมสำหรับตกแต่งร้าน</h2>
-                <p className="text-xs">Lorem iqsum doror sit amit, conmsectetur adioiscing elit. Etima ulrtices odio non ligula rempr, ut</p>
+        <div className="lg:tw-px-36 md:tw-w-full tw-px-5 tw-transition tw-duration-300" style={{ transform: (`translateX(-${100*steps}%)`) }}>
+            <div className="xl:tw-w-3/12 xl:tw-hidden xl:tw-absolute xl:tw-left-5 md:tw-px-20 tw-text-gray-500 tw-mb-12">
+                <h2 className="tw-font-semibold tw-text-gray-400 tw-mb-3">เลือกธีมสำหรับตกแต่งร้าน</h2>
+                <p className="tw-text-xs">Lorem iqsum doror sit amit, conmsectetur adioiscing elit. Etima ulrtices odio non ligula rempr, ut</p>
             </div>
-            <div className="xl:px-56 xl:mx-auto md:px-20 relative flex flex-col items-center justify-center" style={{ maxWidth: "1000px" }}>
-                <div className="xl:w-5/12 xl:absolute xl:block xl:top-0 xl:-left-32 md:px-20 hidden text-gray-500 mb-12">
-                    <h2 className="font-semibold text-gray-400 mb-3">เลือกธีมสำหรับตกแต่งร้าน</h2>
-                    <p className="text-xs">Lorem iqsum doror sit amit, conmsectetur adioiscing elit. Etima ulrtices odio non ligula rempr, ut</p>
+            <div className="xl:tw-px-56 xl:tw-mx-auto md:tw-px-20 tw-relative tw-flex tw-flex-col tw-items-center tw-justify-center" style={{ maxWidth: "1000px" }}>
+                <div className="xl:tw-w-5/12 xl:tw-absolute xl:tw-block xl:tw-top-0 xl:tw--left-32 md:tw-px-20 tw-hidden tw-text-gray-500 tw-mb-12">
+                    <h2 className="tw-font-semibold tw-text-gray-400 tw-mb-3">เลือกธีมสำหรับตกแต่งร้าน</h2>
+                    <p className="tw-text-xs">Lorem iqsum doror sit amit, conmsectetur adioiscing elit. Etima ulrtices odio non ligula rempr, ut</p>
                 </div>
-                <div className="text-gray-500 mb-2">ร้านค้า</div>
-                <div className="md:h-80 relative w-full flex justify-center">
-                    <div className="md:h-64 h-36 overflow-hidden mb-10">
-                        <div className="md:w-80 md:h-80 overflow-hidden w-48 h-48 bg-gray-200 rounded-full relative">
-                            <img className="lg:bottom-16 w-full h-5/6 absolute bottom-12" src={background_1} />
-                            <img className="lg:left-12 md:left-14 w-9/12 absolute bottom-8 left-9" src={restaurant} />
+                <div className="tw-text-gray-500 tw-mb-2">ร้านค้า</div>
+                <div className="md:tw-h-80 tw-relative tw-w-full tw-flex tw-justify-center">
+                    <div className="md:tw-h-64 tw-h-36 tw-overflow-hidden tw-mb-10">
+                        <div className="md:tw-w-80 md:tw-h-80 tw-overflow-hidden tw-w-48 tw-h-48 tw-bg-gray-200 tw-rounded-full tw-relative">
+                            <img className="lg:tw-bottom-16 tw-w-full tw-h-5/6 tw-absolute tw-bottom-12" src={background_1} />
+                            <img className="lg:tw-left-12 md:tw-left-14 tw-w-9/12 tw-absolute tw-bottom-8 tw-left-9" src={restaurant} />
                         </div>
                     </div>
-                    <span className="absolute transform -translate-y-1/2 left-5 top-1/2 text-4xl font-light">{"<"}</span>
-                    <span className="absolute transform -translate-y-1/2 right-5 top-1/2 text-4xl font-light">{">"}</span>
+                    <span className="tw-absolute tw-transform tw--translate-y-1/2 tw-left-5 tw-top-1/2 tw-text-4xl tw-font-light">{"<"}</span>
+                    <span className="tw-absolute tw-transform tw--translate-y-1/2 tw-right-5 tw-top-1/2 tw-text-4xl tw-font-light">{">"}</span>
                 </div>
-                <div className="w-full mb-8">
-                    <div className="mb-3 text-gray-500">เลือกพื้นหลัง</div>
-                    <div className="flex items-center justify-between">
-                        <div className="lg:w-16 lg:h-16 md:w-14 md:h-14 rounded-lg bg-gray-400 w-10 h-10"></div>
-                        <div className="lg:w-16 lg:h-16 md:w-14 md:h-14 rounded-lg bg-gray-400 w-10 h-10"></div>
-                        <div className="lg:w-16 lg:h-16 md:w-14 md:h-14 rounded-lg bg-gray-400 w-10 h-10"></div>
-                        <div className="lg:w-16 lg:h-16 md:w-14 md:h-14 rounded-lg bg-gray-400 w-10 h-10"></div>
-                        <div className="lg:w-16 lg:h-16 md:w-14 md:h-14 rounded-lg bg-gray-400 w-10 h-10"></div>
-                        <div className="lg:w-16 lg:h-16 md:w-14 md:h-14 rounded-lg bg-gray-400 w-10 h-10"></div>
+                <div className="tw-w-full tw-mb-8">
+                    <div className="tw-mb-3 tw-text-gray-500">เลือกพื้นหลัง</div>
+                    <div className="tw-flex tw-items-center tw-justify-between">
+                        <div className="lg:tw-w-16 lg:tw-h-16 md:tw-w-14 md:tw-h-14 tw-rounded-lg tw-bg-gray-400 tw-w-10 tw-h-10"></div>
+                        <div className="lg:tw-w-16 lg:tw-h-16 md:tw-w-14 md:tw-h-14 tw-rounded-lg tw-bg-gray-400 tw-w-10 tw-h-10"></div>
+                        <div className="lg:tw-w-16 lg:tw-h-16 md:tw-w-14 md:tw-h-14 tw-rounded-lg tw-bg-gray-400 tw-w-10 tw-h-10"></div>
+                        <div className="lg:tw-w-16 lg:tw-h-16 md:tw-w-14 md:tw-h-14 tw-rounded-lg tw-bg-gray-400 tw-w-10 tw-h-10"></div>
+                        <div className="lg:tw-w-16 lg:tw-h-16 md:tw-w-14 md:tw-h-14 tw-rounded-lg tw-bg-gray-400 tw-w-10 tw-h-10"></div>
+                        <div className="lg:tw-w-16 lg:tw-h-16 md:tw-w-14 md:tw-h-14 tw-rounded-lg tw-bg-gray-400 tw-w-10 tw-h-10"></div>
                     </div>
                 </div>
                 <button onClick={() => {
@@ -40,7 +40,7 @@ const Restaurant = ({ steps, setStep }) => {
                     i++
                     setStep(i)
                 }}
-                    className="lg:px-36 bg-orange bg-opacity-90 text-white px-16 py-2 rounded-lg font-semibold"
+                    className="lg:tw-px-36 tw-bg-orange tw-bg-opacity-90 tw-text-white tw-px-16 tw-py-2 tw-rounded-lg tw-font-semibold"
                 >
                     ขั้นตอนต่อไป
                 </button>

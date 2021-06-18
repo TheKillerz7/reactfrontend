@@ -19,7 +19,7 @@ function App() {
 
   return (
     <Router>
-      <div className="overflow-hidden">
+      <div className="tw-overflow-hidden">
         <Navbar info={navInfo} />
         <Switch>
           <div className="">
